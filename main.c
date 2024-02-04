@@ -30,7 +30,9 @@ int main(int argc, char *argv[])
     };
 
     if (argc < 2){
-        help();
+        printf("\nThe program reads the temperature sensor data from a file\n");
+        printf("and prints statistics for the year or month\n");
+        printf("To output instructions, enter the parameter > -h <\n");
     }
 
     if(file_name && ((input_month >= 0) && (input_month < 13)))
